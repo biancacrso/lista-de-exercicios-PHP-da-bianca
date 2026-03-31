@@ -16,7 +16,22 @@
 
     <main>
 
-    <!-- implementação da solução -->
+        <?php
+        
+        echo "Digite um número: ";
+        $numero = readline();
+        
+        $fatorial = 1;
+        
+        for ($i = 1; $i <= $numero; $i++) {
+        
+            $fatorial = $fatorial * $i;
+        
+        }
+        
+        echo "O fatorial é: " . $fatorial;
+        
+        ?>
      
     </main>
 </body>
