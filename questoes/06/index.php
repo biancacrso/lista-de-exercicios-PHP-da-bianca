@@ -16,7 +16,28 @@
 
     <main>
 
-    <!-- implementação da solução -->
+        <?php
+        
+        echo "Digite o primeiro número: ";
+        $n1 = readline();
+        
+        echo "Digite o segundo número: ";
+        $n2 = readline();
+        
+        echo "Digite o terceiro número: ";
+        $n3 = readline();
+        
+        $numeros = array($n1, $n2, $n3);
+        
+        rsort($numeros);
+        
+        echo "Números em ordem decrescente:\n";
+        
+        foreach ($numeros as $n) {
+            echo $n . "\n";
+        }
+        
+        ?>
      
     </main>
 </body>
