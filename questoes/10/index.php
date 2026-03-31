@@ -16,7 +16,24 @@
 
     <main>
 
-    <!-- implementação da solução -->
+        <?php
+        
+        echo "Digite o tempo em segundos: ";
+        $segundos = readline();
+        
+        $horas = floor($segundos / 3600);
+        
+        $resto = $segundos % 3600;
+        
+        $minutos = floor($resto / 60);
+        
+        $seg = $resto % 60;
+        
+        echo "Horas: " . $horas . "\n";
+        echo "Minutos: " . $minutos . "\n";
+        echo "Segundos: " . $seg . "\n";
+        
+        ?>
      
     </main>
 </body>
