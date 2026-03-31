@@ -17,10 +17,14 @@
     <main>
 
         <?php
-        $valor = 100;
-
-        echo "O antecessor do valor " . $valor . " é " . ($valor - 1);
-
+        
+        echo "Digite um número: ";
+        $numero = readline();
+        
+        $antecessor = $numero - 1;
+        
+        echo "O antecessor é: " . $antecessor;
+        
         ?>
 
     </main>
