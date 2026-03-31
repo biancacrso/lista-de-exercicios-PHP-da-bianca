@@ -16,22 +16,16 @@
 
     <main>
 
-    <?php 
-
-    function ConverterMetrosCentimetros($metros) {
-        $resultado = $metros * 100;
-        return $resultado;
-    }
-   
-   echo ConverterMetrosCentimetros(99);
-
-    // $distanciaMetros = 100;
-
-    // $x = ConverterMetrosCentimetros(100);
-
-    // echo $x;
-
-    ?>
+        <?php
+        
+        echo "Digite o valor em metros: ";
+        $metros = readline();
+        
+        $centimetros = $metros * 100;
+        
+        echo "Em centímetros fica: " . $centimetros;
+        
+        ?>
      
     </main>
 </body>
