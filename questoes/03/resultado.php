@@ -15,12 +15,19 @@
     </header>
 
     <main>
-    <?php
-    $valor_hora = $_POST["valor_hora"];
-    $horas_trabalhadas = $_POST["horas_trabalhadas"];
-
-    echo "Seu salário do mês é R$" . ($valor_hora * $horas_trabalhadas);
-    ?>
+        <?php
+        
+        echo "Quanto você ganha por hora? ";
+        $valorHora = readline();
+        
+        echo "Quantas horas você trabalha por mês? ";
+        $horas = readline();
+        
+        $salario = $valorHora * $horas;
+        
+        echo "Seu salário no mês é: R$ " . $salario;
+        
+        ?>
      
     </main>
 </body>
